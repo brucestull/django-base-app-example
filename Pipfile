@@ -9,6 +9,7 @@ djangorestframework = "*"
 docutils = "*"
 isort = "*"
 black = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 

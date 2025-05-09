@@ -16,8 +16,21 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from notes import urls as notes_urls
+from notes.api_urls import urlpatterns as notes_api_urls
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("notes/", include(notes_urls)),
+    path("api/", include(notes_api_urls)),
+    path(
+        "api-auth/", include("rest_framework.urls")
+    ),  # for browsable API login # noqa: E501
+]
+
+urlpatterns += [
+    path(
+        "accounts/", include("django.contrib.auth.urls")
+    ),  # login/logout for views # noqa: E501
 ]
