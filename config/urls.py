@@ -15,12 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+from django.views.generic import RedirectView
 from django.contrib import admin
 from django.urls import path, include
 from notes import urls as notes_urls
 from notes.api_urls import urlpatterns as notes_api_urls
 
 urlpatterns = [
+    path("", RedirectView.as_view(url="/notes/")),  # redirect to notes app
     path("admin/", admin.site.urls),
     path("notes/", include(notes_urls)),
     path("api/", include(notes_api_urls)),
