@@ -23,6 +23,7 @@ from notes.api_urls import urlpatterns as notes_api_urls
 
 urlpatterns = [
     path("", RedirectView.as_view(url="/notes/")),  # redirect to notes app
+    path("accounts/", include("django.contrib.auth.urls")),
     path("admin/", admin.site.urls),
     path("notes/", include(notes_urls)),
     path("api/", include(notes_api_urls)),

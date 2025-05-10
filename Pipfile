@@ -10,6 +10,9 @@ docutils = "*"
 isort = "*"
 black = "*"
 djangorestframework-simplejwt = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
 
 [dev-packages]
 
