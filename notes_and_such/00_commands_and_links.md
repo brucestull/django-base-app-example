@@ -63,6 +63,7 @@
 - [http://LOCALHOST:8000/](http://LOCALHOST:8000/): Access the main page of the application.
 - [http://LOCALHOST:8000/admin/](http://LOCALHOST:8000/admin/): Access the Django admin interface.
 - [http://LOCALHOST:8000/notes/](http://LOCALHOST:8000/notes/):
+- [http://LOCALHOST:8000/api/](http://LOCALHOST:8000/api/):
 
 ### Django Admin
 - [Django Admin](http://LOCALHOST:8000/admin/): Access the Django admin interface.

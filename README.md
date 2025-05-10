@@ -448,6 +448,19 @@ Clients can `POST` username and password to `/api/token-auth/` and use:
 Authorization: Token <your_token>
 ```
 
+Get all notes with:
+
+```
+curl -H "Authorization: Token <token_id>" http://localhost:8000/api/notes/
+```
+
+Get note with pk of 1:
+
+```
+curl -H "Authorization: Token <token_id>" http://localhost:8000/api/notes/1/
+```
+
+
 ---
 
 ## ✅ Optional: Login/Logout URLs for Browsable API and Site
